@@ -1,10 +1,11 @@
 import React, { useState, useContext } from 'react';
-import PropTypes from 'prop-types';
 
 import GithubContext from '../context/github/Context';
+import AlertContext from '../context/alert/Context';
 
-export const Search = ({ setAlert }) => {
+export const Search = () => {
   const { users, searchUsers, clearUsers } = useContext(GithubContext);
+  const { setAlert } = useContext(AlertContext);
 
   const [text, setText] = useState('');
 
@@ -47,10 +48,6 @@ export const Search = ({ setAlert }) => {
       )}
     </div>
   );
-};
-
-Search.propTypes = {
-  setAlert: PropTypes.func.isRequired
 };
 
 export default Search;
