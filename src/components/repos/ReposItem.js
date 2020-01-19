@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function ReposItem({ repo }) {
+export function ReposItem({ repo }) {
   return (
     <div className="card">
       <h3>

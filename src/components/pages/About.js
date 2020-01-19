@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react';
 
 export const About = () => {
   return (
@@ -9,3 +9,5 @@ export const About = () => {
     </Fragment>
   );
 };
+
+export default About;
